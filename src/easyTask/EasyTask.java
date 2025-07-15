@@ -116,4 +116,29 @@ public class EasyTask {
         }
         System.out.println(countThree);
     }
+
+    //6. Massivdə 1-dən 3-ə qədər rəqəmli ədədləri çap et.
+    //➡ Əgər length >= 1 && length <= 3 → çap et.
+    public static void onethethreenumbersprint(){
+        int[] numbers = {1,22,334,4444,55555};
+
+        for (int i=0;i<numbers.length;i++){
+            int count = 0;
+            //index reqemini saxlayir her dovrde
+            int reqemYoxlama = numbers[i]; //1,
+
+            //index reqemini muveqqeti saxlayir,yeni bolme elemek ucun
+            int temp = reqemYoxlama;
+
+            while (temp!=0){
+                temp = temp / 10;
+                count++;
+            }
+            if (count >= 1 && count <= 3){
+                System.out.println(reqemYoxlama);
+            }
+        }
+    }
+
+
 }

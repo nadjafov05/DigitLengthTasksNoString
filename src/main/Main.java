@@ -7,9 +7,6 @@ public class Main {
 
     }
 
-    //5. Massivdə neçə ədəddə tək rəqəm sayı var?
-    //➡ Əvvəlki tapşırıqla eynidir, amma % 2 != 0.
-
     //6. Massivdə 1-dən 3-ə qədər rəqəmli ədədləri çap et.
     //➡ Əgər length >= 1 && length <= 3 → çap et.
 
