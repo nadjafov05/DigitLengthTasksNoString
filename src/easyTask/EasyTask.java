@@ -74,4 +74,25 @@ public class EasyTask {
         }
         System.out.println(count);
     }
+
+    //4. Massivdə neçə ədəddə cüt rəqəm sayı var?
+    //➡ Rəqəm sayını tap, əgər length % 2 == 0 → sayacı artır.
+    public static void whatsNumberHaweEvenGit(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enters three numbers in arrays");
+        int numbersEnter = sc.nextInt();
+        int[] numbersArr = new int[numbersEnter];
+
+        int countThree = 0;
+
+        for (int i=0;i<numbersArr.length;i++){
+            numbersArr[i] = sc.nextInt();
+        }
+        for (int i=0;i<numbersArr.length;i++){
+            if (numbersArr[i]%2 == 0){
+                countThree++;
+            }
+        }
+        System.out.println(countThree);
+    }
 }

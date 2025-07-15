@@ -7,9 +7,6 @@ public class Main {
 
     }
 
-    //3. Massivdə neçə ədəddə 3 rəqəm var?
-    //➡ Eyni üsul, sadəcə length == 3 şərti.
-
     //4. Massivdə neçə ədəddə cüt rəqəm sayı var?
     //➡ Rəqəm sayını tap, əgər length % 2 == 0 → sayacı artır.
 
