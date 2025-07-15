@@ -7,30 +7,6 @@ public class Main {
 
     }
 
-    //1. Massivdə neçə ədəddə yalnız 1 rəqəm var?
-    //➡ Hər ədəd üçün while ilə rəqəm sayını tap, 1-dirsə sayacı artır.
-    public static void whatsOneNumbersInArrays(){
-        Scanner sc = new Scanner(System.in);
-        System.out.println("enter to massiv numbers: ");
-        int arraysNumbers = sc.nextInt();
-
-        int[] numbers = new int[arraysNumbers];
-
-        int oneNumbers = 0;
-        for (int i=0;i<numbers.length;i++){
-            numbers[i] = sc.nextInt();
-        }
-        for (int i=0;i<numbers.length;i++){
-            if (numbers[i] > 0 && numbers[i] < 10){
-                oneNumbers++;
-            }
-        }
-        System.out.println(oneNumbers);
-    }
-
-    //2. Massivdə neçə ədəddə 2 rəqəm var?
-    //➡ Rəqəm sayı 2 olan ədədləri say.
-
     //3. Massivdə neçə ədəddə 3 rəqəm var?
     //➡ Eyni üsul, sadəcə length == 3 şərti.
 
