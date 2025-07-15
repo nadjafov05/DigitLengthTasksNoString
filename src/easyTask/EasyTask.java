@@ -184,5 +184,46 @@ public class EasyTask {
     }
 
 
+    //9. Əgər massivdə 0 varsa, onun rəqəm sayını ayrıca yaz.
+    //➡ 0 üçün ayrıca if, rəqəm sayı 1 sayılır.
+    public static void arraysNumber0andNumbersPrint(){
+        int[] numbers = {0,1,2,3,0,5,9,0};
+
+        for (int i=0;i<numbers.length;i++){
+            int reqem = numbers[i];
+            if (reqem == 0){
+                System.out.println(reqem + " → Rəqəm sayı: 1");
+            }else {
+                int count = 0;
+                int temp = reqem;
+
+                while (temp != 0){
+                    temp = temp / 10;
+                    count++;
+                }
+                System.out.println("Ədəd: " + reqem + " → Rəqəm sayı: " + count);
+            }
+        }
+
+    }
+
+    //10. Bütün ədədləri və onların rəqəm sayını çap et.
+    //➡ Dövrdə həm ədədi, həm length-i çap et.
+    public static void printNumbersWithDigitCount(){
+        int[] numbers = {1,22,333,4444,55555,2,1234589};
+
+        for (int i=0;i<numbers.length;i++){
+            int reqem = numbers[i];
+            int count = 0;
+            int bolunenReqem = reqem;
+            while (bolunenReqem!=0){
+                bolunenReqem = bolunenReqem / 10;
+                count++;
+            }
+            System.out.println("reqem : "+ reqem + "icindeki reqem sayi : "+ count);
+        }
+    }
+
+
 
 }
