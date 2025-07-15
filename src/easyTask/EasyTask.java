@@ -162,7 +162,26 @@ public class EasyTask {
         }
     }
 
+    //8. 2 rəqəmli ədədlərin sayını və özlərini çap et.
+    //➡ Həm length == 2 say, həm çap et.
+    public static void whatsTwoNUmbersInArraysAndPrintTwoNumbers(){
+        //massivde olan 2 reqemlilerin saylari
+        int numbersTwo = 0;
 
+        //daxil etdiyimiz scanner qeder massiv doldur
+        int[] numbers = {11,22,33,695,844541,18484,5454,8,22,56};
+
+        //doldurulmus massivlere daxil ol ve
+        for (int i = 0; i < numbers.length; i++) {
+            //eger massivde olan reqemler 10 boyukdurse ve 100 kicikdirse
+            if (numbers[i] > 10 && numbers[i] < 100) {
+                //numbersTwo deyisenini 1 vahid artir
+                numbersTwo++;
+                System.out.println("2 ededli reqem : " + numbers[i]);
+            }
+        }
+        System.out.println("umumi olaraq 2 ededli reqem sayi : "+numbersTwo);
+    }
 
 
 
