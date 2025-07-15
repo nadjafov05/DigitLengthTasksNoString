@@ -53,4 +53,25 @@ public class EasyTask {
         }
         System.out.println(numbersTwo);
     }
+
+    //3. Massivdə neçə ədəddə 3 rəqəm var?
+    //➡ Eyni üsul, sadəcə length == 3 şərti.
+
+    public static void whatsThreeNumbersInArrays(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("whats enter added arrays?");
+        int addArrays = sc.nextInt();
+        int[] arrays = new int[addArrays];
+
+        int count = 0;
+        for (int i=0;i<arrays.length;i++){
+            arrays[i] = sc.nextInt();
+        }
+        for (int i=0;i<arrays.length;i++){
+            if (arrays[i] >= 100 && arrays[i] < 1000){
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
 }
