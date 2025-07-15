@@ -7,9 +7,6 @@ public class Main {
 
     }
 
-    //4. Massivdə neçə ədəddə cüt rəqəm sayı var?
-    //➡ Rəqəm sayını tap, əgər length % 2 == 0 → sayacı artır.
-
     //5. Massivdə neçə ədəddə tək rəqəm sayı var?
     //➡ Əvvəlki tapşırıqla eynidir, amma % 2 != 0.
 

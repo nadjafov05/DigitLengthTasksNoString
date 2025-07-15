@@ -95,4 +95,25 @@ public class EasyTask {
         }
         System.out.println(countThree);
     }
+
+    //5. Massivdə neçə ədəddə tək rəqəm sayı var?
+    //    //➡ Əvvəlki tapşırıqla eynidir, amma % 2 != 0.
+    public static void whatsNumberHaweOddGit(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("enters three numbers in arrays");
+        int numbersEnter = sc.nextInt();
+        int[] numbersArr = new int[numbersEnter];
+
+        int countThree = 0;
+
+        for (int i=0;i<numbersArr.length;i++){
+            numbersArr[i] = sc.nextInt();
+        }
+        for (int i=0;i<numbersArr.length;i++){
+            if (numbersArr[i]%2 != 0){
+                countThree++;
+            }
+        }
+        System.out.println(countThree);
+    }
 }
