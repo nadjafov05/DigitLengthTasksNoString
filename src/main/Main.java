@@ -7,9 +7,6 @@ public class Main {
 
     }
 
-    //6. Massivdə 1-dən 3-ə qədər rəqəmli ədədləri çap et.
-    //➡ Əgər length >= 1 && length <= 3 → çap et.
-
     //7. Massivdə yalnız 5 rəqəmli ədədləri çap et.
     //➡ length == 5 olanları çap et.
 

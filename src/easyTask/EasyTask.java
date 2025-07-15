@@ -119,7 +119,7 @@ public class EasyTask {
 
     //6. Massivdə 1-dən 3-ə qədər rəqəmli ədədləri çap et.
     //➡ Əgər length >= 1 && length <= 3 → çap et.
-    public static void onethethreenumbersprint(){
+    public static void onethethreenumberprint(){
         int[] numbers = {1,22,334,4444,55555};
 
         for (int i=0;i<numbers.length;i++){
@@ -139,6 +139,31 @@ public class EasyTask {
             }
         }
     }
+
+    //7. Massivdə yalnız 5 rəqəmli ədədləri çap et.
+    //➡ length == 5 olanları çap et.
+    public static void fivenumberprint(){
+        int[] numbers = {1,22,333,4444,55555,91205,41256};
+
+        for (int i=0;i<numbers.length;i++){
+            int count = 0; // 5 eded olanlari her defe artirir
+
+            int reqemYoxlama = numbers[i]; // i de olan reqemleri saxlayir
+
+            int temp = reqemYoxlama;
+
+            while (temp!=0){
+                temp = temp / 10;
+                count++;
+            }
+            if (count >4 && count <6){
+                System.out.println(reqemYoxlama);
+            }
+        }
+    }
+
+
+
 
 
 }
