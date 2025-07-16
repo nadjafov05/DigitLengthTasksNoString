@@ -243,4 +243,57 @@ public class EasyHard {
         System.out.println("reqemlerin ferqi = :"+ferq2);
     }
 
+
+    //18. Bütün ədədlərin ümumi rəqəm sayını topla.
+    //➡ Hər length-i sum-a əlavə et.
+
+    public static void sumOfAllDigitCounts(){
+        int[] massiv = {5, 12, 345, 7896};
+        int toplamReqemSayi = 0;
+
+        for (int i = 0; i < massiv.length; i++) {
+            int reqemSayi = 0;
+
+            int eded = massiv[i];
+            if (eded == 0) {
+                reqemSayi = 1;
+            } else {
+                while (eded != 0) {
+                    eded = eded / 10;
+                    reqemSayi++;
+                }
+            }
+
+            toplamReqemSayi += reqemSayi;
+        }
+        System.out.println("Bütün ədədlərin ümumi rəqəm sayı: " + toplamReqemSayi);
+    }
+
+    //19. Rəqəm sayı tək olan ədədlərin cəmini hesabla.
+    //➡ length % 2 != 0 → bu ədədi sum-a əlavə et.
+
+    public static void sumOfNumbersWithOddDigitCount(){
+        int[] massiv = {5, 12, 345, 7896};
+        int toplamReqemSayi = 0;
+
+        for (int i = 0; i < massiv.length; i++) {
+            int reqemSayi = 0;
+
+            int eded = massiv[i];
+            if (eded == 0) {
+                reqemSayi = 1;
+            } else {
+                while (eded != 0) {
+                    eded = eded / 10;
+                    reqemSayi++;
+                }
+            }
+
+            if (reqemSayi%2 == 1){
+                toplamReqemSayi += reqemSayi;
+                System.out.println(reqemSayi);
+            }
+        }
+        System.out.println("Bütün ədədlərin ümumi rəqəm sayı: " + toplamReqemSayi);
+    }
 }
